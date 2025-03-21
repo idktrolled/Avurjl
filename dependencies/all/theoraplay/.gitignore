@@ -1,1 +1,4 @@
-
+test/*.dSYM
+test/*.exe
+test/testtheoraplay
+test/sdltheoraplay
