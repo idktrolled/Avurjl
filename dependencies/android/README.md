@@ -9,9 +9,11 @@
 
 * libvorbis: [Download](https://xiph.org/downloads/) and unzip it in `dependencies/android/libvorbis`.
 
+* libtheora: [Download](https://xiph.org/downloads/) and unzip it in `dependencies/android/libtheora`.
+
 * Ensure the symbolic links in `[root]/android/app/jni` are correct:
   * `SDL` -> Root of the Android SDL dependency
-  * `src` -> Root of the RSDKv4 repository
+  * `src` -> Root of the RSDKv3 repository
   
     To add symbolic links, do the following:
       * Windows: `mklink /d "[name-of-symlink]" "[path]"`
@@ -22,4 +24,4 @@
 ### `make: *** INTERNAL: readdir: No such file or directory`
 Delete `android/app/build` and try again. This occurs when the path is short enough to build, but too long for a rebuild. 
 ### `make: Interrupt/exception caught (code = 0xc0000005)`
-Your paths are too long. Try renaming the symbolic links to something shorter, or make a symbolic link to RSDKv4 closer to the root of the drive and open the project through there (e.x. C:/RSDKv4/android). *I haven't had either issue since I did this.*
+Your paths are too long. Try renaming the symbolic links to something shorter, or make a symbolic link to RSDKv3 closer to the root of the drive and open the project through there (e.x. C:/RSDKv3/android). *I haven't had either issue since I did this.*
