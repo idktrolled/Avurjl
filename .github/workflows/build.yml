@@ -67,7 +67,7 @@ jobs:
         with:
           submodules: recursive
       - name: bruj
-        run: mklink /D ..\..\..
+        run: mklink --help
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
       - name: Download libogg, libvorbis, and libtheora for easier includes
