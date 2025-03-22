@@ -66,6 +66,10 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+      - name: bruj
+        run: |
+          mklink /D ..\..\..
+          mklink /D ..\..\..\dependencies\android\SDL
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
       - name: Download libogg, libvorbis, and libtheora for easier includes
